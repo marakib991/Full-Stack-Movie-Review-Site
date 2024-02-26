@@ -27,7 +27,7 @@ div_new.innerHTML= `
     </div>
   </div>
   `
-
+  main.appendChild(div_new);
 returnReviews(APILINK)
   function returnReviews(url){
     fetch(url + "movie/" + movieId).then(res => res.json())
@@ -73,11 +73,12 @@ function editReview(id, review, user){
 }
 
 
-function saveReview(reviewInputId, userInputId, id=" "){
+function saveReview(reviewInputId, userInputId, id){
   const review = document.getElementById(reviewInputId).value;
   const user = document.getElementById(userInputId).value;
 
   if(id){
+    console.log('Updating Review:', id, 'User:', user, 'Review:', review);
         fetch(APILINK + id, {
           method: 'PUT',
           headers: {
@@ -104,4 +105,14 @@ function saveReview(reviewInputId, userInputId, id=" "){
             location.reload();
           });
       }
+    }
+
+    function deleteReview(id) {
+      fetch(APILINK + id, {
+        method: 'DELETE'
+      }).then(res => res.json())
+        .then(res => {
+          console.log(res)
+          location.reload();
+        });    
     }
