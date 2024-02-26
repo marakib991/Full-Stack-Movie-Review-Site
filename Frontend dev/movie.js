@@ -2,7 +2,7 @@ const url = new URL(location.href);
 const movieId = url.searchParams.get("id");
 const movieTitle = url.searchParams.get("title");
 
-const APILINK = 'https://e9239176-cecf-411c-9519-7d7d9dba21c6-00-2k5bi1wy51k53.picard.replit.dev/api/v1/reviews/';
+const APILINK = 'http://localhost:8000/api/v1/reviews/';
 
 const main = document.getElementById("section");
 const title = document.getElementById("title");
