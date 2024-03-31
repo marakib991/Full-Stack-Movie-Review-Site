@@ -4,7 +4,7 @@ import ReviewsDAO from "./dao/reviewsDAO.js"
 const MongoClient = mongodb.MongoClient
 // const mongo_username = process.env['MONGO_USERNAME']
 // const mongo_password = process.env['MONGO_PASSWORD']
-const uri = `mongodb+srv://rarefigure:HR547s9c4lSnCQLa@cluster0.3tzbhom.mongodb.net/?retryWrites=true&w=majority`
+const uri = `mongodb+srv://<username>:<password>@cluster0.3tzbhom.mongodb.net/?retryWrites=true&w=majority`
 
 const port = 8000 || 3030 || 5050
 await MongoClient.connect(
