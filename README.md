@@ -22,4 +22,4 @@ Before you start, make sure you have the following installed:
    npm run start
 
 3. Run Frontend:
-  -Open index.html and run it in a browser.
+- Open index.html and run it in a browser.
