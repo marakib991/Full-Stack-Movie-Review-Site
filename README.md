@@ -7,7 +7,7 @@ This project demonstrates searching for any movies for that you want to write a 
 Before you start, make sure you have the following installed:
 
 - Node.js (https://nodejs.org)
-- Use your own mongoDB <username> and <password> in the Backend/index.js in url section.
+- Use your own mongoDB "username" and "password" in the Backend/index.js in url section.
   
 ## Installation
 
